@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Usuário" required>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+
+            <div class="caixa">
+                <label><input type="checkbox"> Lembre-se</label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="registre-link">
+                <p>Não é registrado? <a href="#">Registre aqui</a></p>
+            </div>
+            <div class="selecao">
+                <h1>Você e Aluno ou e Treinador?</h1>
+                <label><input type="radio" name="selecaos" value="aluno"> Aluno</label>
+                <label><input type="radio" name="selecaos" value="Personal"> Personal</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
